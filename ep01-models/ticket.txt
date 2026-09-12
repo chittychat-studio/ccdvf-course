@@ -1,0 +1,3 @@
+Subject: Export to CSV fails on large reports
+Customer says the export button spins for a minute and then shows a generic error.
+Happens only on reports over roughly ten thousand rows. Started after the last release.
