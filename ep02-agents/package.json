@@ -1,0 +1,16 @@
+{
+  "name": "ccdvf-ep02-agents",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "loop": "tsx loop.ts",
+    "loop:nogate": "GATE=off tsx loop.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "latest"
+  },
+  "devDependencies": {
+    "tsx": "latest",
+    "typescript": "latest"
+  }
+}
