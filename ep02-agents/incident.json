@@ -1,0 +1,5 @@
+{
+  "service": "checkout-test",
+  "severity": "critical",
+  "summary": "error rate spike on checkout-test after deploy"
+}
