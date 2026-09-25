@@ -1,0 +1,17 @@
+{
+  "name": "ep06-config-checker",
+  "version": "1.0.0",
+  "description": "CCDV-F EP 06 companion: check that a repo's Claude Code config travels to the next machine",
+  "scripts": {
+    "precheck": "node setup-fixtures.mjs",
+    "check": "tsx check-config.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "type": "module"
+}
