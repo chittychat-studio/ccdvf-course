@@ -15,6 +15,7 @@ Youtube playlist for easier understanding of concepts is https://www.youtube.com
 | EP 04 | Prompt and context engineering | [`ep04-prompting`](ep04-prompting) | Python | Yes, except `check_offline.py` |
 | EP 05 | Tools and MCP | [`ep05-tools-mcp`](ep05-tools-mcp) | TypeScript | No |
 | EP 06 | Applications and integration, part 2: settings and CLAUDE.md | [`ep06-config-checker`](ep06-config-checker) | TypeScript | No |
+| EP 07 | Claude Code: permission modes, hooks, subagents, skills and plugins | [`ep07-guard-hook`](ep07-guard-hook) | TypeScript | No |
 
 Each folder has its own README (how to run it) and, from EP 04 on, a `PRACTICE.md` with hands-on exercises and original practice questions.
 
