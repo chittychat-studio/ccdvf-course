@@ -1,0 +1,15 @@
+{
+  "problem": "Help our support team answer faster",
+  "functional": [
+    { "id": "R1", "text": "Draft a first reply within one working minute of a ticket arriving" },
+    { "id": "R2", "text": "Sort each ticket into one of four queues" },
+    { "id": "R3", "text": "Draft a reply that cites the right policy" },
+    { "id": "R4", "text": "Never send a reply without a person approving it" }
+  ],
+  "infrastructure": {
+    "latency": "Draft ready within a few seconds, measured from the support office",
+    "scale": "Peak load at the busiest hour of the week",
+    "residency": { "region": "india", "rule": "Client contract: customer data processed in India" },
+    "identity": "Runs under a service role; every draft and approval is logged"
+  }
+}
