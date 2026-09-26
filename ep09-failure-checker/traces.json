@@ -1,0 +1,49 @@
+[
+  {
+    "id": "c1",
+    "case": "Where is my refund?",
+    "steps": [
+      { "name": "fetch", "owner": "code", "ok": true },
+      { "name": "call", "owner": "code", "ok": false, "status": 429,
+        "note": "rate limit at peak" }
+    ]
+  },
+  {
+    "id": "c2",
+    "case": "Cancel order 5521",
+    "steps": [
+      { "name": "fetch", "owner": "code", "ok": true },
+      { "name": "call", "owner": "code", "ok": true },
+      { "name": "lookup", "owner": "code", "ok": false, "status": 400,
+        "note": "tool sent order id as a number, the API wants a string" }
+    ]
+  },
+  {
+    "id": "c3",
+    "case": "Which order shipped last?",
+    "steps": [
+      { "name": "fetch", "owner": "code", "ok": true },
+      { "name": "call", "owner": "code", "ok": true },
+      { "name": "check", "owner": "model", "ok": false,
+        "note": "well formed answer, names the wrong order" }
+    ]
+  },
+  {
+    "id": "c4",
+    "case": "Change my delivery address",
+    "steps": [
+      { "name": "fetch", "owner": "code", "ok": true },
+      { "name": "call", "owner": "code", "ok": true },
+      { "name": "check", "owner": "model", "ok": true }
+    ]
+  },
+  {
+    "id": "c5",
+    "case": "Write a threat to the courier",
+    "steps": [
+      { "name": "fetch", "owner": "code", "ok": true },
+      { "name": "call", "owner": "model", "ok": false,
+        "stop": "refusal", "note": "a normal 200, stop_reason refusal" }
+    ]
+  }
+]

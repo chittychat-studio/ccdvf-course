@@ -1,0 +1,16 @@
+{
+  "name": "ep09-failure-checker",
+  "version": "1.0.0",
+  "description": "CCDV-F EP 09 companion: a failure checker that reads recorded traces and says which step broke, whether it is your code or the model, and whether to retry or fail fast",
+  "scripts": {
+    "try": "tsx checker.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "type": "module"
+}
