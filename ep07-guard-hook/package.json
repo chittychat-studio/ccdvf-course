@@ -1,0 +1,16 @@
+{
+  "name": "ep07-guard-hook",
+  "version": "1.0.0",
+  "description": "CCDV-F EP 07 companion: a PreToolUse guard hook for Claude Code, and a tester that runs it without Claude Code",
+  "scripts": {
+    "try": "tsx try-guard.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "type": "module"
+}
